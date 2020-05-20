@@ -632,7 +632,7 @@ img#card-image{
     flex-direction: column;
   }
   .card{
-    margin-top: 20px;
+    margin-top: 20px; 
   }
 }
 
