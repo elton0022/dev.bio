@@ -13,6 +13,41 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.cards{
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.card{
+  width: 100%;
+  max-width: 300px;
+  align-items: center;
+  background-color: #141414;
+  border-radius: 10px;
+  margin: 0px 7px 0px 7px;
+
+  display: flex;
+  flex-direction: column;
+}
+.card div.techs{
+  padding-top: 25px;
+  align-items: center;
+  text-align: center;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+img#card-image{
+  width: 60px;
+  height: 60px;
+}
+
+
+
 #loading {
   width: 100vw;
   height: 100vh;
@@ -594,3 +629,5 @@ body {
       url("https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-1.2.1") !important;
   }
 }
+
+
