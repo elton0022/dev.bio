@@ -2,155 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>elton0022</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="https://avatars2.githubusercontent.com/u/31295927?v=4" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bio - elton0022</title>
 </head>
 
 <body>
-  <div id="loading">
-    <div id="spinner"></div>
-  </div>
-  <div id="profile">
-    <div id="profile_img" style="background: url(https://avatars2.githubusercontent.com/u/31295927?v=4) center;"></div>
-    <div id="username"><span style="display:block;">Elton Rodrigues</span><a
-        href="https://github.com/elton0022">@elton0022</a></div>
-    <div id="userbio" style="display: block;">Full Stack developer, and student of the computer science course at the Universidade Federal do Ceará</div>
-    <div id="about">
-      <span style="display:block;"><i class="fas fa-envelope"></i> &nbsp; <a
-        href="mailto:eltonrodrigues0022.er@gmail.com">eltonrodrigues0022.er@gmail.com/</a></span>
-      <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a
-          href="https://elton0022.github.io/dev.bio/">https://elton0022.github.io/dev.bio/</a></span>
-      <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Crateús, Ceará - Brasil</span>
-      <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
-      <div class="socials">
-        <span style="display:block;"> <i class="fab fa-linkedin-in"></i> &nbsp;  
-          <a href="https://www.linkedin.com/in/elton-rodrigues-25b8b7169/" target="_blank"
-            class="socials"> Linkedin</a></span>
-      </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-sidebar">
+                <div class="card-sidebar-header">
+                    <img src="https://avatars2.githubusercontent.com/u/31295927?v=4" alt="Perfil de Elton Rodrigues">
+                    <h5 class="title">Elton Rodrigues</h5>
+                </div>
+                <div class="card-sidebar-body">
+                    <a>Linguagens</a>
+                    <a>Tecnologias</a>
+                    <a>Formação</a>
+                </div>
+                <div class="card-sidebar-footer">
+
+                </div>
+            </div>
+            <div class="card-content">
+                content
+            </div>
+        </div>
     </div>
-  </div>
-  <div id="display">
-    <div id="work">
-      <h1>Technologies.</h1>
-      <div class="cards">
-        <div class="card">
-          <div class="techs">
-            <img id="card-image" src="./icons/front.png" alt="">
-            <div class="section_title">Front-end</div>
-          </div>
-          <div class="techs">
-            <span style="display:block; font-weight: bold;">HTML5, CSS</span>
-            <span style="display:block; ">Bootstrap, Bootstrap, Clarity FrameWork </span>
-          </div>
-          <div class="techs">
-            <span style="display:block; font-weight: bold;"> TypeScript, JavaScript</span>
-            <span style="display:block; ">Angular5+, React, Ionic, React Native </span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="techs">
-            <img id="card-image" src="./icons/back.png" alt="">
-            <div class="section_title">Back-end</div>
-          </div>
-          <div class="techs">
-            <span style="display:block; font-weight: bold;">Java</span>
-            <span style="display:block; ">Spring Framework </span>
-          </div>
-          <div class="techs">
-            <span style="display:block; font-weight: bold;">TypeScript, JavaScript</span>
-            <span style="display:block; ">Node, ExpressJS</span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="techs">
-            <img id="card-image" src="./icons/other.png" alt="">
-            <div class="section_title">Other skills</div>
-          </div>
-          <div class="techs">
-            <span style="display:block; font-weight: bold;">Databases</span>
-            <span style="display:block; ">MySQL, MongoDB, PostgreSQL </span>
-          </div>
-          <div class="techs">
-            <span style="display:block; font-weight: bold;">Team Work</span>
-            <span style="display:block; ">Git, Scrum</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  <script type="text/javascript">
-    setTimeout(function () {
-      document.getElementById("loading").classList.add("animated");
-      document.getElementById("loading").classList.add("fadeOut");
-      setTimeout(function () {
-        document.getElementById("loading").classList.remove("animated");
-        document.getElementById("loading").classList.remove("fadeOut");
-        document.getElementById("loading").style.display = "none";
-      }, 800);
-    }, 1500);
-    $.getJSON("blog.json", function (blog) {
-      blog = blog || [];
-      if (blog.length == 0) {
-        return (document.getElementById("blog_section").style.display =
-          "none");
-      }
-      for (var i = 0; i < blog.length; i++) {
-        $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
-                <section>
-                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
-                    <div class="blog_container">
-                        <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}
-                        </div>
-                    </div>
-                </section>
-            </a>
-            `);
-      }
-    }).fail(function () {
-      return (document.getElementById("blog_section").style.display = "none");
-    });
-  </script>
-
-  <script>
-    const magicProjectsGrid = new MagicGrid({
-      container: "#work_section",
-      animate: false,
-      gutter: 30, // default gutter size
-      static: true,
-      useMin: false,
-      maxColumns: 2,
-      useTransform: true
-    });
-
-    const magicForksGrid = new MagicGrid({
-      container: "#forks_section",
-      animate: false,
-      gutter: 30, // default gutter size
-      static: true,
-      useMin: false,
-      maxColumns: 2,
-      useTransform: true
-    });
-
-    $("document").ready(() => {
-      magicProjectsGrid.listen();
-      magicForksGrid.listen();
-    });
-  </script>
-
-
+    <script src="./script.js"></script>
 </body>
 
 </html>
