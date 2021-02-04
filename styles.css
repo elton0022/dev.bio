@@ -36,18 +36,24 @@ body {
 
 .card-sidebar {
     width: 100%;
-    max-width: 150px;
+    max-width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: center;
     border-right: 1px solid #ddd;
     text-align: center;
     font-size: 16px;
+    text-align: center;
 }
 
 .card-sidebar img {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
+}
+
+.card-sidebar-header {
+    font-size: 20px;
 }
 
 .card-sidebar-header img {
@@ -56,30 +62,44 @@ body {
 
 .card-sidebar-body {
     height: 100%;
+    max-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    text-align: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.card-sidebar-footer {
+    height: 100%;
     max-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 10px;
     font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-.card-sidebar-body a {
+.card-sidebar-footer a {
     width: 100%;
-    max-width: 200px;
     padding: 6px 6px;
     background: none;
     border: none;
-    box-shadow: 0px 5px 10px #00000033;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px #00000033;
     border-radius: 30px;
     cursor: pointer;
     font-weight: bold;
     color: #585858;
 }
 
-.card-sidebar-body a:hover {
+.card-sidebar-footer a:hover {
     color: #ffff;
     background-color: #793dda;
+    box-shadow: 0px 4px 10px #000000;
 }
 
 .card-content {
@@ -89,8 +109,5 @@ body {
     padding: 2rem 0rem;
     font-weight: lighter;
     transition: all 0.75s ease-out;
-}
-
-li {
-    list-style-type: none;
+    overflow-y: auto;
 }
