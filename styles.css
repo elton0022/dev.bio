@@ -10,7 +10,24 @@ body {
     background-color: #6322cc;
     font-family: "Poppins", sans-serif;
     color: var(--text-color);
+    scrollbar-base-color: #9b2121;
     -webkit-font-smoothing: antialiased, !important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #bab4c7;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: #9d7dcf;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9d7dcf;
+    border-radius: 5px;
 }
 
 a {
@@ -134,24 +151,55 @@ a {
 
 .card-content {
     width: 100%;
-    text-align: center;
+    height: 100%;
     font-size: 1.3rem;
     padding: 2rem 0rem;
     font-weight: lighter;
     overflow-y: auto;
 }
 
+.card-content .page {
+    height: 500px;
+    padding-left: 5px;
+}
+
+.card-content .page-body {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-content .page-body .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-content .page-body .row img {
+    margin-left: 12px;
+}
+
 @supports (display: flex) {
     @media screen and (max-width: 600px) {
         .card {
             width: 100%;
-            max-width: 350px;
+            max-width: 400px;
             display: flex;
             flex-direction: column;
-            height: 1000px;
+            margin-top: 0px;
+            height: 800px;
+            border-radius: 0px;
         }
         .card-sidebar {
             border-right: none;
+        }
+        .card-sidebar-footer {
+            display: none;
         }
     }
 }
