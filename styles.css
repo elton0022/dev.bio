@@ -10,7 +10,6 @@ body {
     background-color: #6322cc;
     font-family: "Poppins", sans-serif;
     color: var(--text-color);
-    scrollbar-base-color: #9b2121;
     -webkit-font-smoothing: antialiased, !important;
 }
 
@@ -33,7 +32,7 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
-    color: #585858;
+    color: #3f0e8d;
 }
 
 .container {
@@ -45,8 +44,8 @@ a {
 .card {
     transform-style: preserve-3d;
     width: 100%;
-    max-width: 900px;
-    height: 500px;
+    max-width: 1000px;
+    height: 520px;
     margin: 50px auto;
     padding: 20px 20px 10px 20px;
     background-color: #ffff;
@@ -94,18 +93,17 @@ a {
     flex-direction: column;
     justify-content: space-between;
     font-size: 14px;
-    text-align: left;
-    margin-top: 10px;
+    margin-bottom: 80px;
 }
 
-.card-sidebar-body .bios {
+.card-sidebar-body .bio {
     width: 100%;
     font-size: 14px;
     text-align: left;
     margin-bottom: 10px;
 }
 
-.card-sidebar-body .contact {
+.card-sidebar-body .info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -113,22 +111,21 @@ a {
     margin-bottom: 10px;
 }
 
-.card-sidebar-body .contact span {
+.card-sidebar-body .info span {
     margin: 2px 2px;
     text-align: left;
 }
 
-.card-sidebar-footer {
-    height: 100%;
-    max-height: 200px;
+.card-sidebar-body .nav {
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: 14px;
-    margin: 10px;
+    margin: 5px 5px;
 }
 
-.card-sidebar-footer a {
+.card-sidebar-body .nav a {
     width: 100%;
     padding: 6px 6px;
     background: none;
@@ -142,11 +139,19 @@ a {
     transform: scale(1);
 }
 
-.card-sidebar-footer a:hover {
+.card-sidebar-body .nav a:hover {
     color: #ffff;
     background-color: #793dda;
     box-shadow: 0px 4px 10px #000000;
     transform: scale(1.03);
+}
+
+.social {
+    margin: 10px 50px 2px 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .card-content {
@@ -172,34 +177,51 @@ a {
     margin-top: 10px;
 }
 
-.card-content .page-body .row {
+.row {
     width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.card-content .page-body .row img {
-    margin-left: 12px;
 }
 
 @supports (display: flex) {
     @media screen and (max-width: 600px) {
+        body {
+            background-color: #ffff;
+        }
         .card {
             width: 100%;
-            max-width: 400px;
+            height: 400px;
             display: flex;
             flex-direction: column;
             margin-top: 0px;
-            height: 800px;
             border-radius: 0px;
+            box-shadow: none;
         }
         .card-sidebar {
             border-right: none;
+            height: 100%;
         }
-        .card-sidebar-footer {
+        .card-sidebar-body {
+            margin-top: 10px;
+            margin-bottom: 2px;
+        }
+        .card-sidebar-body .nav {
             display: none;
+        }
+        .social {
+            display: none;
+        }
+        .social-content-footer {
+            margin: 10px 50px 10px 50px;
+            font-size: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .card-content {
+            height: 1000px;
+            overflow-y: visible;
         }
     }
 }
