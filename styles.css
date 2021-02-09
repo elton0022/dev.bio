@@ -177,6 +177,10 @@ a {
     margin-top: 10px;
 }
 
+.social-content-footer {
+    display: none;
+}
+
 .row {
     width: 100%;
     display: flex;
