@@ -1,7 +1,7 @@
 /*
 //Movimento de animação para acontecer
-const card = document.querySelector(".card");
-const container = document.querySelector(".container");
+const card = document.querySelector(".tech");
+const container = document.querySelector(".card-content");
 //Definir constante
 const title = document.querySelector(".title");
 const sneaker = document.querySelector(".sneaker img");
