@@ -1,0 +1,14 @@
+.darkmode--activated .card {
+    background: #141414;
+    color: #ffff;
+}
+
+.darkmode--activated .tech {
+    background-color: #292828;
+    color: #ffff;
+    border: none;
+}
+
+.darkmode--activated .social a {
+    color: #6322cc;
+}

@@ -32,7 +32,7 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
-    color: #3f0e8d;
+    color: #6322cc;
 }
 
 .container {
@@ -42,7 +42,6 @@ a {
 }
 
 .card {
-    transform-style: preserve-3d;
     width: 100%;
     max-width: 1100px;
     height: 450px;
@@ -52,7 +51,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-shadow: 0 5px 5px #2c2b2b, 0px 0px 5px #2c2b2b;
+    box-shadow: 2px 1px 1px 2px #7e7e7e;
     border-radius: 5px;
 }
 
@@ -141,9 +140,12 @@ a {
     color: #000000;
     font-size: 14px;
     text-align: center;
-    border-radius: 10px;
     border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px #bebcbc;
+    transform-style: preserve-3d;
     transition: 0.4s ease-in-out;
+    background: blur(30);
     transform: scale(1);
 }
 
@@ -152,6 +154,7 @@ a {
     background-color: #793dda;
     box-shadow: 0px 4px 10px #000000;
     transform: scale(1.03);
+    border: none;
 }
 
 .tech-header {
