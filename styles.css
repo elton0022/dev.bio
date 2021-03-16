@@ -185,13 +185,16 @@ a {
 }
 
 @supports (display: flex) {
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 900px) {
         body {
+            background-color: #ffff;
+        }
+        .container{
             background-color: #ffff;
         }
         .card {
             width: 100%;
-            height: 400px;
+            height: 100%;
             display: flex;
             flex-direction: column;
             margin-top: 0px;

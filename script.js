@@ -46,13 +46,13 @@ function addDarkmodeWidget() {
         right: 'unset', // default: '32px'
         left: '32px', // default: 'unset'
         time: '0.5s', // default: '0.3s'
-        mixColor: '#6322cc', // default: '#fff'
+        mixColor: '#303030', // default: '#fff'
         backgroundColor: '#6322cc', // default: '#fff'
-        buttonColorDark: '#000000', // default: '#100f2c'
-        buttonColorLight: '#6322cc', // default: '#fff'
-        saveInCookies: false, // default: true,
+        buttonColorDark: '#100f2c', // default: '#100f2c'
+        buttonColorLight: '#fff', // default: '#fff'
+        saveInCookies: true, // default: true,
         label: '🌓', // default: ''
-        autoMatchOsTheme: true // default: true
+        autoMatchOsTheme: false // default: true
     }
     new Darkmode(options).showWidget();
 }
