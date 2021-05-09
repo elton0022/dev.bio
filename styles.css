@@ -11,6 +11,10 @@ body {
     font-family: "Poppins", sans-serif;
     color: var(--text-color);
     -webkit-font-smoothing: antialiased, !important;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
 }
 
 ::-webkit-scrollbar-track {
@@ -45,13 +49,15 @@ a {
     width: 100%;
     max-width: 1100px;
     height: 450px;
-    margin: 50px auto;
+    margin: 90px auto;
     padding: 20px 20px 10px 20px;
     background-color: #ffff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-shadow: 2px 1px 1px 2px #7e7e7e;
+    box-shadow: 2px 1px 0px 0px #7e7e7e;
+    opacity: 90%;
+    background: blur(30);
     border-radius: 5px;
 }
 
@@ -82,7 +88,7 @@ a {
 .card-sidebar-header img {
     width: 120px;
     height: 120px;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 .card-sidebar-body {
@@ -143,6 +149,7 @@ a {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0px 0px 0px 1px #bebcbc;
+    cursor: pointer;
     transform-style: preserve-3d;
     transition: 0.4s ease-in-out;
     background: blur(30);
@@ -198,12 +205,16 @@ a {
             display: flex;
             flex-direction: column;
             margin-top: 0px;
+            margin-bottom: 0px;
             border-radius: 0px;
             box-shadow: none;
         }
         .card-sidebar {
+            margin: 0 auto;
             border-right: none;
+            width: 100%;
             height: 100%;
+            padding: 0px;
         }
         .card-sidebar-body {
             margin-top: 10px;
@@ -216,16 +227,18 @@ a {
             display: none;
         }
         .card-content {
-            height: 1500px;
+            height: 1200px;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding-left: 2px;
             padding-right: 2px;
+
         }
         .card-content .tech {
             width: 100%;
             max-width: 500px;
+            cursor: pointer;
         }
         .social-content-footer {
             width: 200px;

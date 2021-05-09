@@ -50,7 +50,7 @@ function addDarkmodeWidget() {
         backgroundColor: '#6322cc', // default: '#fff'
         buttonColorDark: '#100f2c', // default: '#100f2c'
         buttonColorLight: '#fff', // default: '#fff'
-        saveInCookies: true, // default: true,
+        saveInCookies: false, // default: true,
         label: '🌓', // default: ''
         autoMatchOsTheme: false // default: true
     }
